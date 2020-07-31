@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-block {
+    position: absolute;
+    left: 0;
+    background-color: red;
+    height: 400px;
+    width: 30%;
+    opacity: 0.5;
+}
+
+.right-block {
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    background-color: orange;
+    height: 400px;
+    width: 30%;
+    opacity: 0.5;
+}
+
+.processing-container {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 750px;
+    
+}
+
+
+
+img {
+    width: 5vw;
+    border: 3px solid orange;
+}
+
+.download {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(+50%, -50%);
+    opacity: 0.5;
+}
+
+.file {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.success {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.processing-label {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.processing-label:last-of-type{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.testing {
+    src:url(../images/file-success.png);
+}
+
+@keyframes test1 {
+    0% {content:url(../images/file-success.png)} 
+    100% {content: url(../images/download.png)}
+}
